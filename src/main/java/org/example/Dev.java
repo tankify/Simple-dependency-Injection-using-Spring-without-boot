@@ -10,6 +10,11 @@ public class Dev {
         this.age = age;
     }
 
+    public Dev(int age) {
+        this.age = age;
+        System.out.println("Dev param Constructor");
+    }
+
     //private Laptop laptop;
     private int age;
 
