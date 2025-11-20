@@ -15,7 +15,15 @@ public class Dev {
         System.out.println("Dev param Constructor");
     }
 
-    //private Laptop laptop;
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
+
+    private Laptop laptop;
     private int age;
 
     public Dev(){
@@ -25,6 +33,6 @@ public class Dev {
     public void build()
     {
         System.out.println("learning Spring");
-        //laptop.compile();
+        laptop.compile();
     }
 }

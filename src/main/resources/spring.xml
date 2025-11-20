@@ -7,8 +7,9 @@
     <bean id="dev" class="org.example.Dev">
 <!--        <property name="age" value="12"/>-->
         <constructor-arg value="14"/>
+        <property name="laptop" ref="lap"/>
     </bean>
 
-    <bean id="laptop" class="org.example.Laptop">
+    <bean id="lap" class="org.example.Laptop">
     </bean>
 </beans>
