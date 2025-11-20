@@ -5,11 +5,14 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="dev" class="org.example.Dev">
-<!--        <property name="age" value="12"/>-->
-        <constructor-arg value="14"/>
-        <property name="laptop" ref="lap"/>
+        <property name="age" value="12"/>
+<!--        <constructor-arg value="14"/>-->
+<!--        <property name="laptop" ref="lap"/>-->
+        <property name="comp" ref="desk"/>
     </bean>
 
     <bean id="lap" class="org.example.Laptop">
+    </bean>
+    <bean id="desk" class="org.example.Desktop">
     </bean>
 </beans>

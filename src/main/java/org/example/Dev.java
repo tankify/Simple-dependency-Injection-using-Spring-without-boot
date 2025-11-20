@@ -2,6 +2,18 @@ package org.example;
 
 public class Dev {
 
+    private Laptop laptop;
+    private Computer comp;
+    private int age;
+
+    public Computer getComp() {
+        return comp;
+    }
+
+    public void setComp(Computer comp) {
+        this.comp = comp;
+    }
+
     public int getAge() {
         return age;
     }
@@ -15,16 +27,15 @@ public class Dev {
         System.out.println("Dev param Constructor");
     }
 
-    public Laptop getLaptop() {
-        return laptop;
-    }
+//    public Laptop getLaptop() {
+//        return laptop;
+//    }
+//
+//    public void setLaptop(Laptop laptop) {
+//        this.laptop = laptop;
+//    }
 
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
-    }
 
-    private Laptop laptop;
-    private int age;
 
     public Dev(){
         System.out.println("Dev Constructor");
@@ -33,6 +44,6 @@ public class Dev {
     public void build()
     {
         System.out.println("learning Spring");
-        laptop.compile();
+        comp.compile();
     }
 }
